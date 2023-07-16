@@ -1,0 +1,242 @@
+:root {
+  --background: #242222;
+  --text-sm: 16px;
+  --text-xl: 30px;
+  --text-md: 24px;
+  --primary: #ee0fdb;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  font-size: var(--text-xl);
+  color: var(--primary);
+}
+/*
+header h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+#Description,
+#inputText {
+  height: 30px;
+  width: 500px;
+  outline: none;
+  outline-style: none;
+  border-radius: 10px;
+}
+
+button {
+  outline: none;
+  background: rgb(253, 63, 63);
+}
+
+#lista h3 {
+  font-size: var(--text-md);
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+}
+
+b {
+  margin: 0 100px 0 500px;
+}
+
+#listaContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px;
+  padding: 0 30px;
+}
+
+#listaContent table {
+  background: rgb(68, 68, 68);
+  height: 70px;
+  border-radius: 5px;
+}
+
+#listaContent .btn-delete{
+  padding: 5px 10px;
+  border: none;
+  border-radius: 50px;
+  color: rgb(31, 8, 8);
+  justify-content: flex-end;
+}
+*/
+
+header h1 {
+  margin-left: 5px;
+}
+
+.lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.campo {
+  background: rgb(85, 85, 85);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.308), 0 0;
+  width: 30%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.campo__boton .btn {
+  background: pink;
+  color: rgb(59, 7, 7);
+  border: none;
+  width: 100px;
+  height: 30px;
+  margin: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.campo__boton .btn:hover {
+  background: rgb(250, 171, 185);
+  border: 2px solid rgb(252, 149, 166);
+  transition: all ease 0.5s;
+}
+
+.campo__nombre #nombreTarea,
+.campo__descripcion #descripcionTarea {
+  border: none;
+  outline: none;
+  height: 1.5em;
+  width: 100%;
+  padding: 5px;
+}
+
+.campo__nombre #nombreTarea::-webkit-input-placeholder,
+.campo__descripcion #descripcionTarea::-webkit-input-placeholder {
+  text-align: center;
+  line-height: 100px;
+}
+
+/*Lista de Tareas*/
+
+hr {
+  width: 95%;
+  height: 1px;
+  margin: 5px;
+}
+
+#nombreTarea__2::-webkit-input-placeholder,
+#descripcionTarea__2::-webkit-input-placeholder {
+  text-align: center;
+  line-height: 100px;
+}
+
+#nombreTarea__2,
+#descripcionTarea__2 {
+  border: none;
+  outline: none;
+  height: 1.5em;
+  width: 90%;
+  padding: 15px;
+  margin-left: 10px;
+}
+
+.tabla {
+  height: 500px;
+  width: 500px;
+  background: rgb(85, 85, 85);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.308), 0 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tabla p {
+  color: pink;
+  font-size: var(--text-xl);
+  margin: 5px 0 5px;
+}
+
+.tabla .tabla__tareas .boton__eliminar {
+  background: rgb(250, 63, 63);
+}
+
+.tabla .tabla__tareas .boton__listo {
+  background: white;
+  margin: 10px;
+}
+
+.tabla .tabla__tareas .boton__listo:hover {
+  background: green;
+  color: black;
+  transition: all ease 0.375s;
+  border: 1px solid rgba(59, 160, 59, 0.007);
+}
+
+.boton {
+  color: black;
+  border: none;
+  height: 35px;
+  width: 60px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Screens */
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: var(--text-sm);
+  }
+
+  .lista {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+  }
+
+  .campo {
+    height: 50%;
+    width: 50%;
+  }
+
+  .campo .campo__nombre {
+    margin-bottom: 10px;
+  }
+
+  .tabla {
+    margin: 10px;
+    width: 85%;
+  }
+
+  .tabla h3 {
+    font-size: var(--text-md);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .campo {
+    height: 50%;
+    width: 80%;
+  }
+  
+}

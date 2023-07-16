@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normal.css" />
+    <title>Task App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Task App</h1>
+    </header>
+    <!---
+    <div class="container">
+      <input type="text" id="inputText" placeholder="Titulo..." required />
+      <input
+        type="text"
+        id="Description"
+        placeholder="Descripción..."
+        required
+      />
+      <input
+        type="button"
+        value="Submit"
+        id="btn-submit"
+        onclick="ingresar()"
+      />
+    </div>
+    <div id="lista">
+      <div class="head">
+        <h3>Titulo</h3>
+        <b></b>
+        <h3>Descripción</h3>
+      </div>
+      <div id="listaContent"></div>
+    </div>
+  --->
+
+    <div class="lista">
+      <div class="campo">
+        <h3>Formulario</h3>
+        <div class="campo__nombre">
+          <input type="text" id="nombreTarea" placeholder="Tarea" required />
+        </div>
+        <div class="campo__descripcion">
+          <input
+            type="text"
+            id="descripcionTarea"
+            placeholder="Descripción"
+            required
+          />
+        </div>
+        <div class="campo__boton">
+          <input
+            type="submit"
+            value="Agregar"
+            class="btn"
+            onclick="agregandoTarea()"
+          />
+        </div>
+      </div>
+
+      <div class="tabla">
+        <h3>Tus tareas</h3>
+        <hr />
+        <div class="tabla__tareas"></div>
+      </div>
+    </div>    
+    <script src="js/script.js"></script>
+  </body>
+</html>
