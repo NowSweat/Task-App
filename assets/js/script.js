@@ -90,10 +90,7 @@ function editandoTodo() {
     return alert("La descripción es muy larga!");
   if (tarea_nombre.length > 5)
     return alert("El nombre de la tarea es muy largo!");
-  if (id > 8) return alert("No puedes añadir más tareas!");
-
   let parrafo = document.createElement("p");
   parrafo.innerHTML += `${tarea_nombre} - ${tarea_descripcion} - <button class='boton boton__eliminar' onclick='eliminarTarea(this)'>Eliminar</button> <button onclick='editarTarea(this)' class='boton boton__editar'>Editar</button><hr>`;
   contenedor.append(parrafo);
-  id++;
 }
